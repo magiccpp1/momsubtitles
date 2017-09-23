@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "momsubtitle",
+  "description": "This extension allows the user to show the subtitles in any languages on HBO",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "changeLang.html"
+  },
+  "background": {"scripts":["background.js"]},
+  "permissions": [
+    "webRequest",
+    "https://static.hbonordic.com/*/HBON-*-000-SUB-01-01-XML-*.xml",
+    "webRequestBlocking",
+    "activeTab",
+    "storage"
+  ]
+}
